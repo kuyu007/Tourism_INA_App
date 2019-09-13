@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main_Menu_Dashboard"
+    android:background="#2C00BCD4">
+
+    <ImageView
+        android:id="@+id/iv_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/icon_dashboard_1"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_profil"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Profile"
+            android:textAllCaps="false"
+            android:textColor="#A53817"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btn_idntourism"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_profil"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Indonesian Tourism"
+            android:textAllCaps="false"
+            android:textColor="#A53817"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_idntourism"
+            android:layout_marginTop="80dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#23C0D5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Trust Me Indonesian Is Wonderfull"
+                    android:textColor="#A53817"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/antic_slab" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>
